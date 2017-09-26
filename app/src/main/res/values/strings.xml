@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">In And Out</string>
+    <string name="place_order_tv">Place an Order</string>
+    <string name="double_double_tv">Double Double</string>
+    <string name="cheeseburger_tv">Cheeseburger</string>
+    <string name="french_fries_tv">French Fries</string>
+    <string name="shakes_tv">Shakes</string>
+    <string name="fountain_drinks_tv">Fountain Drinks (pick size)</string>
+    <string name="small_tv">Small</string>
+    <string name="medium_tv">Medium</string>
+    <string name="large_tv">Large</string>
+    <string name="place_order_button">PLACE ORDER</string>
+    <string name="order_total_tv">Order Total</string>
+    <string name="items_ordered_tv">Items Ordered:</string>
+    <string name="subtotal_tv">Subtotal:</string>
+    <string name="tax_tv">Tax (8%):</string>
+    <string name="start_order_button">START NEW ORDER</string>
 </resources>

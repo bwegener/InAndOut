@@ -1,11 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/order_background"
+    android:columnCount="2"
     tools:context="edu.orangecoastcollege.cs273.bwegener.inandout.OrderActivity">
 
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/placeOrderTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_row="0"
+        android:gravity="center"
+        android:text="@string/place_order_tv"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/doubleDoubleTV"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:gravity="right"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:text="@string/double_double_tv"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/doubleDoubleET"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/cheeseburgerTV"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="0"
+        android:gravity="right"
+        android:layout_row="2"
+        android:text="@string/cheeseburger_tv"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/cheeseburgerET"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/frenchFriesTV"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="0"
+        android:gravity="right"
+        android:layout_row="3"
+        android:text="@string/french_fries_tv"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/frenchFriesET"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/shakesTV"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="0"
+        android:gravity="right"
+        android:layout_row="4"
+        android:text="@string/shakes_tv"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/shakesET"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="1"
+        android:layout_row="4"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/fountainDrinksTV"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="0"
+        android:gravity="right"
+        android:layout_row="5"
+        android:text="@string/fountain_drinks_tv"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/smallTV"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="0"
+        android:layout_row="6"
+        android:gravity="right"
+        android:text="@string/small_tv"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/smallET"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="1"
+        android:layout_row="6"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/mediumTV"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="0"
+        android:layout_row="7"
+        android:gravity="right"
+        android:text="@string/medium_tv"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/mediumET"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="1"
+        android:layout_row="7"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/largeTV"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="0"
+        android:layout_row="8"
+        android:gravity="right"
+        android:text="@string/large_tv"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/largeET"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_column="1"
+        android:layout_row="8"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="25sp"/>
+
+    <Button
+        android:id="@+id/placeOrderButton"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_column="1"
+        android:layout_row="9"
+        android:text="@string/place_order_button"
+        android:textSize="25sp"/>
+
+
+</GridLayout>
