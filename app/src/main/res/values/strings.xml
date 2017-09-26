@@ -13,6 +13,6 @@
     <string name="order_total_tv">Order Total</string>
     <string name="items_ordered_tv">Items Ordered:</string>
     <string name="subtotal_tv">Subtotal:</string>
-    <string name="tax_tv">Tax (8%):</string>
+    <string name="tax_tv">Tax</string>
     <string name="start_order_button">START NEW ORDER</string>
 </resources>

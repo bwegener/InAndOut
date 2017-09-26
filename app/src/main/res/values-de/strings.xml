@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">In Und Aus</string>
+    <string name="cheeseburger_tv">Cheeseburger</string>
+    <string name="double_double_tv">Doppelte Doppelte</string>
+    <string name="fountain_drinks_tv">Brunnengetränke (wählen Größe)</string>
+    <string name="french_fries_tv">Pommes Frittes</string>
+    <string name="items_ordered_tv">Bestellte Artikel:</string>
+    <string name="large_tv">Groß</string>
+    <string name="medium_tv">Mittel</string>
+    <string name="order_total_tv">Bestellen Insgesamt</string>
+    <string name="place_order_button">PLATZ BESTELLEN</string>
+    <string name="place_order_tv">Eine Bestellung Aufgeben</string>
+    <string name="shakes_tv">Milchshakes</string>
+    <string name="small_tv">Klein</string>
+    <string name="start_order_button">NEUE BESTELLUNG STARTEN</string>
+    <string name="subtotal_tv">Zwischensumme:</string>
+    <string name="tax_tv">Steuer</string>
+</resources>
