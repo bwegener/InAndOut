@@ -88,6 +88,7 @@ public class Order {
                 getShakes() * PRICE_SHAKE;
     }
 
+    // Change to get numberOfItems() find on Canvas
     public int totalItems()
     {
         return getCheeseburgers() + getDoubleDoubles() + getFrenchFries() + getLargeDrinks() +
