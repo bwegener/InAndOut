@@ -13,6 +13,7 @@ public class Order {
     private int mMediumDrinks;
     private int mShakes;
     private int mSmallDrinks;
+
     public static final double PRICE_CHEESEBURGER = 2.15;
     public static final double PRICE_DOUBLE_DOUBLE = 3.60;
     public static final double PRICE_FRENCH_FRIES = 1.65;
@@ -88,7 +89,7 @@ public class Order {
                 getShakes() * PRICE_SHAKE;
     }
 
-    public int totalItems()
+    public int getNumberItemsOrdered()
     {
         return getCheeseburgers() + getDoubleDoubles() + getFrenchFries() + getLargeDrinks() +
                 getMediumDrinks() + getSmallDrinks() + getShakes();
