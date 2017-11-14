@@ -12,6 +12,15 @@ import org.w3c.dom.Text;
 
 import java.text.NumberFormat;
 
+/**
+ * The OrderActivity allows the user to order any of the items below
+ * then transfers these orders to the SummaryActivity
+ *
+ * @author Brian Wegener
+ * @version 1.0
+ *          <p>
+ *          Created on 9/26/2017
+ */
 public class OrderActivity extends AppCompatActivity {
 
     private static final NumberFormat currency = NumberFormat.getCurrencyInstance();
@@ -35,6 +44,11 @@ public class OrderActivity extends AppCompatActivity {
 
     private Order mOrder = new Order();
 
+    /**
+     * This is what happens when the app is first launched.
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,19 +81,52 @@ public class OrderActivity extends AppCompatActivity {
 
     }
 
-    private void collectFoodOrder()
-    {
-        mOrder.setDoubleDoubles(Integer.parseInt(mDoubleDoubleEditText.getText().toString()));
-        mOrder.setCheeseburgers(Integer.parseInt(mCheeseburgerEditText.getText().toString()));
-        mOrder.setFrenchFries(Integer.parseInt(mFrenchFriesEditText.getText().toString()));
-        mOrder.setShakes(Integer.parseInt(mShakesEditText.getText().toString()));
-        mOrder.setLargeDrinks(Integer.parseInt(mLargeDrinkEditText.getText().toString()));
-        mOrder.setMediumDrinks(Integer.parseInt(mMediumDrinkEditText.getText().toString()));
-        mOrder.setSmallDrinks(Integer.parseInt(mSmallDrinkEditText.getText().toString()));
+
+    private void collectFoodOrder() {
+        if (mDoubleDoubleEditText.getText().length() == 0)
+            mOrder.setDoubleDoubles(0);
+        else
+            mOrder.setDoubleDoubles(Integer.parseInt(mDoubleDoubleEditText.getText().toString()));
+
+        if (mCheeseburgerEditText.getText().length() == 0)
+            mOrder.setCheeseburgers(0);
+        else
+            mOrder.setCheeseburgers(Integer.parseInt(mCheeseburgerEditText.getText().toString()));
+
+        if (mFrenchFriesEditText.getText().length() == 0)
+            mOrder.setFrenchFries(0);
+        else
+            mOrder.setFrenchFries(Integer.parseInt(mFrenchFriesEditText.getText().toString()));
+
+        if (mShakesEditText.getText().length() == 0)
+            mOrder.setShakes(0);
+        else
+            mOrder.setShakes(Integer.parseInt(mShakesEditText.getText().toString()));
+
+        if (mLargeDrinkEditText.getText().length() == 0)
+            mOrder.setLargeDrinks(0);
+        else
+            mOrder.setLargeDrinks(Integer.parseInt(mLargeDrinkEditText.getText().toString()));
+
+        if (mMediumDrinkEditText.getText().length() == 0)
+            mOrder.setMediumDrinks(0);
+        else
+            mOrder.setMediumDrinks(Integer.parseInt(mMediumDrinkEditText.getText().toString()));
+
+        if (mSmallDrinkEditText.getText().length() == 0)
+            mOrder.setSmallDrinks(0);
+        else
+            mOrder.setSmallDrinks(Integer.parseInt(mSmallDrinkEditText.getText().toString()));
     }
 
-    protected void orderSummary(View v)
-    {
+    /**
+     * This collects all relevant items to be presented when the button is clicked
+     * and the SummaryActivity is displayed to the user
+     *
+     * @param v the new view that the user sees.
+     */
+
+    protected void orderSummary(View v) {
         collectFoodOrder();
         String orderTotal = "Order Total " + currency.format(mOrder.calculateTotal());
         String numberOrdered = "Items Ordered: " + mOrder.getNumberItemsOrdered();
